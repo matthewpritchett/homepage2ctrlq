@@ -24,6 +24,9 @@ _Interception Tools_ works everywhere without relying on X11 or Wayland.
 
 ## Install
 
+ArchLinux users can use [`interception-ralt2hyper`](https://aur.archlinux.org/packages/interception-ralt2hyper/)
+from the AUR.
+
 Binaries are not currently provided. Compile and place within `$PATH`.
 
 ``` shell
