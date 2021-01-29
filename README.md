@@ -24,10 +24,39 @@ _Interception Tools_ works everywhere without relying on X11 or Wayland.
 
 ## Install
 
-Binaries are currently published on the
-[Package Registry](https://gitlab.com/oarmstrong/ralt2hyper/-/packages) for
-this project. The binaries are compiled for 64-bit Linux and only require
-`glibc`.
+Binaries are not currently provided. Compile and place within `$PATH`.
+
+``` shell
+$ cmake -B build -DCMAKE_BUILD_TYPE=Release
+-- The C compiler identification is GNU 10.2.0
+-- The CXX compiler identification is GNU 10.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ollie/proj/ralt2hyper/build
+$ make -C build
+make: Entering directory '/home/ollie/proj/ralt2hyper/build'
+make[1]: Entering directory '/home/ollie/proj/ralt2hyper/build'
+make[2]: Entering directory '/home/ollie/proj/ralt2hyper/build'
+Scanning dependencies of target ralt2hyper
+make[2]: Leaving directory '/home/ollie/proj/ralt2hyper/build'
+make[2]: Entering directory '/home/ollie/proj/ralt2hyper/build'
+[ 50%] Building C object CMakeFiles/ralt2hyper.dir/ralt2hyper.c.o
+[100%] Linking C executable ralt2hyper
+make[2]: Leaving directory '/home/ollie/proj/ralt2hyper/build'
+[100%] Built target ralt2hyper
+make[1]: Leaving directory '/home/ollie/proj/ralt2hyper/build'
+make: Leaving directory '/home/ollie/proj/ralt2hyper/build'
+```
 
 ## Usage
 
