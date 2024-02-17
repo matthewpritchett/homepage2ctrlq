@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(ralt2hyper)
+project(homepage2ctrlq)
 
-add_executable(ralt2hyper ralt2hyper.c)
-target_compile_options(ralt2hyper PRIVATE -Wall -Wextra)
+add_executable(homepage2ctrlq homepage2ctrlq.c)
+target_compile_options(homepage2ctrlq PRIVATE -Wall -Wextra)
 
-install(TARGETS ralt2hyper RUNTIME DESTINATION bin)
+install(TARGETS homepage2ctrlq RUNTIME DESTINATION bin)

@@ -23,13 +23,11 @@ int main() {
 			continue;
 		}
 
-		if (input.type == EV_KEY && input.code == KEY_RIGHTALT) {
+		if (input.type == EV_KEY && input.code == KEY_HOMEPAGE) {
 			struct input_event lctrl = {.type = EV_KEY, .code = KEY_LEFTCTRL, .value = input.value};
-			struct input_event lmeta = {.type = EV_KEY, .code = KEY_LEFTMETA, .value = input.value};
-			struct input_event lalt = {.type = EV_KEY, .code = KEY_LEFTALT, .value = input.value};
+			struct input_event q = {.type = EV_KEY, .code = KEY_Q, .value = input.value};
 			write_event(&lctrl);
-			write_event(&lmeta);
-			write_event(&lalt);
+			write_event(&q);
 			continue;
 		}
 
